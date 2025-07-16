@@ -94,4 +94,4 @@ with st.spinner("Fetching forecast data..."):
 # ℹ️ Footer
 st.write("🔗 Weather data: [open-meteo.com](http://open-meteo.com)")
 st.write("📍 Cities database: [simplemaps.com](https://simplemaps.com/data/world-cities)")
-st.write("👨‍💻 Modified with ❤️ by [Arideep](https://github.com/ArideepCodes)")
+st.write("👨‍💻 Made with ❤️ by [Arideep](https://github.com/ArideepCodes)")
