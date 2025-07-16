@@ -1,16 +1,21 @@
-# Streamlit Weather Webapp
+🌦️ Arideep's Streamlit Weather Webapp
+This is a simple and interactive Streamlit web app that shows:
 
-This is a basic Streamlit webapp displaying the current temperature, wind speed
-and wind direction as well as the temperature and precipitation forecast for 
-the week ahead at one of 40,000+ cities and towns around the globe. The weather
-forecast is given in terms of the actual timezone of the city of interest.
-Additionally, a map with the location of the requested city is displayed.
+🌡️ Current temperature
 
-- The weather data is from http://open-meteo.com
-- The list with over 40,000 cities around world stems from 
-  https://simplemaps.com/data/world-cities
+💨 Wind speed & direction
 
-The webapp is hosted on the Streamlit Community Cloud and can be accessed here
-https://weather-webapp.streamlit.app/
+📆 7-day temperature & precipitation forecast
 
-Enjoy exploring!
+🗺️ Location-based map for 40,000+ cities around the world
+
+The app automatically adjusts to the timezone of the selected city.
+
+🌍 Data Sources
+Weather Data: Open-Meteo
+
+City Database: SimpleMaps World Cities
+
+🚀 Deploy It Yourself
+This app can be deployed easily on Streamlit Community Cloud, GitHub Pages, or your local machine.
+
