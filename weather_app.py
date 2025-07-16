@@ -21,7 +21,7 @@ import plotly.graph_objs as go
 from datetime import datetime
 from datetime import timezone as tmz
 import pytz
-from tzwhere import tzwhere
+from timezonefinder import TimezoneFinder
 import folium
 from streamlit_folium import folium_static
 
@@ -60,9 +60,9 @@ with st.spinner("Fetching forecast data..."):
     hourly = json.loads(hourly_res._content)["hourly"]
     df = pd.DataFrame(hourly).rename(columns={"time":"Week ahead", "temperature_2m":"Temperature °C", "precipitation":"Precipitation mm"})
 
-    # 🕒 Timezone handling
-    tz = tzwhere.tzwhere(forceTZ=True)
-    timezone_str = tz.tzNameAt(lat, lng, forceTZ=True)
+    # 🕒 Timezone handling using timezonefinder
+    tf = TimezoneFinder()
+    timezone_str = tf.timezone_at(lat=lat, lng=lng)
     timezone_loc = pytz.timezone(timezone_str)
     offset = timezone_loc.utcoffset(datetime.now())
 

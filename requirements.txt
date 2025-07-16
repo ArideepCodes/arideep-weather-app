@@ -3,6 +3,6 @@ pandas
 requests
 plotly
 pytz
-tzwhere
 folium
 streamlit-folium
+timezonefinder
